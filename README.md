@@ -15,10 +15,10 @@ case.
 
 Example code:
 
-    var enforceOrder = new OrderEnforcer();
-    setTimeout(enforceOrder(function() { console.log('one'); }), 100);
-    setTimeout(enforceOrder(function() { console.log('two'); }), 1000);
-    setTimeout(enforceOrder(function() { console.log('three'); }), 500);
+    var order = new OrderEnforcer();
+    setTimeout(order.enforce(function() { console.log('one'); }), 100);
+    setTimeout(order.enforce(function() { console.log('two'); }), 1000);
+    setTimeout(order.enforce(function() { console.log('three'); }), 500);
 
 Output:
 
